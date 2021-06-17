@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="fonts/material-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .d{
+            display: flex;
+            position: fixed;
+            position: absolute;
+        }
+        /* r+Jjd4mP */
+    </style>
+</head>
+<body>
+    <!-- QUESTIONS -->
+        <!-- 1. USERS OVERFLOW -->
+        <!-- 2. MISHBEHAIVOUR OF MY FOOTER -->
+        <!-- 3. -->
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <textarea name="" id="" cols="30" maxlength="20" rows="10"></textarea>
+<input type="password" placeholder="" name="" id="">
+    <div class="card">
+        <div class="card-image wave-effect waves-block waves-light">
+            <img src="" alt="">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is...</p>
+        </div>
+    </div>
+
+    <div name="mediaType" class="col s12 m12 l12">
+        <div class="image-div">
+            <div class="zoom">
+                <img src="../img/ccc.jpg" width="100%">
+            </div>
+            <div class="desc">picture1</div>
+        </div>
+        <div class="image-div">
+            <div class="zoom">
+                <img src="../img/ccc.jpg" width="100%">
+            </div>
+            <div class="desc">picture1</div>
+        </div>
+        <div class="image-div">
+            <div class="zoom">
+                <img class="responsive-img" src="../img/articleImages/'.$row['fileName'].'" alt="" width="100%" />
+    
+            </div>
+            <div class="desc">picture1</div>
+        </div>
+    </div>
+    <div class="">
+        <video src="./img/ccc.jpg" poster="./img/bbb.jpg" controls >
+            <a href="./img/4_5985439107713599670.mp4">g</a>
+        </video>
+        <source>
+            <source src="./img/4_5985439107713599670.mp4" type="video/mp4">
+    </div>
+    <audio src="./img/Odumeje-Umu-Jesus-ft-Flavour-(TrendyBeatz.com).mp3"></audio>
+    SELECT article.id, article.articles, article.datePosted, article.title, users.firstname, users.lastname,
+    categories.category FROM article, users, categories WHERE article.userId = users.id AND article.catId =
+    categories.id
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/jbs.js"></script>
+</body>
+</html>let gender = $('input[name="gender"]:checked').val();
+<a href=""></a>
+
+<div id="test2" class="col s12">
+    <h5 class="center"><i>Audio</i></h5>
+    <div class="col 12">
+        <form action="controller.php" method="POST" id="makeArticle" enctype="multipart/form-data">
+            <div class="file-field input-field col s12">
+                <div class="btn">
+                    <span>Image</span>
+                    <input type="file" name="articleImg">
+                </div>
+                <div class="file-path-wrapper">
+                    <input class="file-path  validate" type="text" required>
+                    <label class="red-text">Size:Less than 500kb, Dim:1000x500pixels</label>
+                </div>
+            </div>
+            <br>
+            <div class="input-field col s6">
+                <button class="btn waves-effect waves-light col s12" type="submit">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="col s6" name="mediaType">
+        <audio src="../img/Odumeje-Umu-Jesus-ft-Flavour-(TrendyBeatz.com).mp3" controls></audio>
+        <audio src="../img/Odumeje-Umu-Jesus-ft-Flavour-(TrendyBeatz.com).mp3" controls></audio>
+    </div>
+                      <?php
+                        echo '<p><a href=""><i class="material-icons medium">account_circle</i></a></p>';
+                        echo  "Hi $names welcome to our page";
+    
+                    ?>
+                    SELECT userId, mediaType, datePosted, fileName FROM fileuploads,categories,users WHERE fileuploads.userId = user.id AND
+                    fileuploads.mediaTypeId = categories.id ORDER BY fileuploads.datePosted DESC
+
+                    SELECT userId, datePosted, fileName FROM fileuploads,categories,users WHERE fileuploads.userId = userId ORDER BY
+                    fileuploads.datePosted DESC
+
+                    INSERT INTO `categories` (`id`, `mediaType`) VALUES (NULL, 'V'), (NULL, 'I');
+
+                    SELECT userId, datePosted,mediaType, fileName FROM fileuploads, users WHERE fileuploads.userId = userId AND
+                    fileuploads.mediaType = mediaType ORDER BY fileuploads.datePosted DESC
+
+                    SELECT * FROM fileuploads, users WHERE fileuploads.userId = userId AND fileuploads.mediaType = "I" ORDER BY
+                    fileuploads.datePosted DESC
+
+                    <a href="#"></a>
+                    SELECT
+                    fileuploads.id,fileuploads.fileName,fileuploads.mediaType,fileuploads.datePosted,users.firstname,users.lastname,categories.mediaType
+                    FROM fileuploads,users,categories WHERE fileuploads.userId = users.id ORDER BY fileuploads.datePosted DESC
+</div>
+SELECT * FROM fileuploads,users WHERE userId = users.id AND users.id = userId
+INSERT INTO fileuploads(userId, mediaType, datePosted, fileName) VALUES (userId,mediaType, NOW(), fileName)
+
+SELECT userId, datePosted,mediaType, fileName,users.id,users.firstname,users.lastname,users.email,users.gender FROM
+fileuploads,users WHERE fileuploads.userId = users.id AND fileuploads.mediaType = "I" ORDER BY fileuploads.datePosted
+DESC
+
+// <li><i><a href="singleFile.php?userId='.$row['id'].'" class="black-text">'.$firstname.' '.$lastname.'</a></i></li>
+    <li><i><a href="#" class="black-text">'.$firstname.' '.$lastname.'</a></i></li>
+
+
+    
+    SELECT userId, datePosted,mediaType, fileName FROM fileuploads,users WHERE fileuploads.userId = users.id AND
+    fileuploads.mediaType = "I" ORDER BY fileuploads.datePosted DESC
+                          
+    $a = array('red','green');
+    array_push(,'blue','yellow');
+    print_r()
+    $res = $db->query('SELECT * FROM fileuploads WHERE id = '.$fileuploadsId);
+    SELECT fileuploads.id,
+    fileuploads.userId,fileuploads.mediaType,fileuploads.datePosted,fileuploads.fileName,users.firstname,users.lastname FROM
+    fileuploads,users ORDER BY datePosted DESC
+
+    <div class="container grey">
+        <div class="row">
+    
+            <div class="col s12 m10 l10">
+    
+                <div id="test1" class="row">
+                    <h5 class="center"><i>Images</i></h5>
+    
+                    <?php
+                                
+                                $res =  $db->query('SELECT * FROM fileuploads WHERE  userId = '.$userId.' ORDER BY datePosted DESC');
+                                $nmRws = $res->num_rows;
+    
+                                if($nmRws > 0){
+                                        while($row = $res->fetch_assoc()){
+                                         $mediaType = $row['mediaType'];
+    
+                                            if( $mediaType == 'I'){
+                                                array_push($imgArr, $row);
+                                            
+                                             echo '<div>
+                                                    <div  class="col s10 m6 l3">              
+                                                        <div class="image-div" >
+                                                            <div class="zoom">
+                                                            <img class="responsive-img" src="../img/articleImages/'.$row['fileName'].'" alt="" width="100%"/>
+                                                            </div>
+                                                        </div>    
+                                                            <div class="desc">
+                                                            <b>'.substr($row['fileName'], 0, 20).'...</b> <br>
+                                                            <i><small>'.$row['datePosted'].'</small></i> 
+                                                            </div> 
+                                                                        
+                                                    </div>
+                                                </div>';
+                                            } 
+    
+                                        }
+                                } else {
+                                    echo '<div class="col l12 center-align"><i>No related post.</i></div>';
+                                }
+                                
+                            ?>
+    
+                </div>
+    
+                <div id="test2" class="row">
+                    <h5 class="center"><i>Audio</i></h5>
+                    <?php
+                        
+                                    $res1 =  $db->query('SELECT * FROM fileuploads WHERE userId = '.$userId.' ORDER BY datePosted DESC');
+                                    $nmRws1 = $res1->num_rows;
+                                            
+                                    if($nmRws1 > 0){    
+                                        while($row = $res1->fetch_assoc()){
+                                            $mediaType = $row['mediaType'];
+    
+                                            if( $mediaType == 'A'){
+                                                array_push($audArr, $row);
+                                             
+                                            echo  ' <div class="col s12 m12 l6" >
+                                                        <div> 
+                                                            <p style="margin-left:12px;"><b>'.substr($row['fileName'], 0, 20).'...</b></p> 
+                                                        
+                                                            <audio controls>
+                                                                <source media="(min-width:200px)" src="../img/audio/'.$row['fileName'].'" srcset="" sizes="">
+                                                            </audio> <br>
+                                                        </div>
+                                                    </div>';
+                                                }
+                                        }
+                                    } else {
+                                        echo '<div class="col l12 center-align"><i>No related post.</i></div>';
+                                    }
+                                    
+                                ?>
+                    <?php
+                                    echo '<p><a href=""><i class="material-icons medium">account_circle</i></a></p>';
+                                    echo  "Hi $names welcome to our page";
+                                ?>
+    
+                </div>
+    
+                <!-- <div id="test3" class="col s12">Test 3</div> -->
+    
+    
+    
+                <div id="test4" class="row">
+                    <h5 class="center"><i>Videos</i></h5>
+                    <?php
+                                
+                                $res2 =  $db->query('SELECT * FROM fileuploads WHERE  userId = '.$userId.' ORDER BY datePosted DESC');
+                                $nmRws2 = $res2->num_rows;
+            
+                                if($nmRws2 > 0){    
+                                    while($row = $res2->fetch_assoc()){ 
+                                        $mediaType = $row['mediaType'];
+    
+                                            if( $mediaType == 'V'){
+                                                array_push($vidArr, $row);
+                                            
+                                        
+                                    echo    '<div class="col s12 m6 l4">
+                                            <p style="margin-left:12px;"><b>'.substr($row['fileName'], 0, 20).'...</b></p> 
+                                                <video  controls poster="../img/bbb.jpg"  height="300px" width="80%">
+                                                    <source src="../img/video/'.$row['fileName'].'" >                            
+                                                </video>
+                                            </div>'; 
+                                        }
+                                        }
+                                    } else {
+                                        echo '<div class="col l12 center-align"><i>No related post.</i></div>';
+                                    }
+            
+                                    
+                                ?>
+                </div>
+            </div>
+    
+            <div class="col s12 m2 l2 light-green" style="margin-top:3.5rem;">
+                <section>
+                    <h6><b>USERS</b></h6>
+                    <hr>
+                    <?php
+                                $res3 = $db->query('SELECT * FROM users');
+                                $nmRws3 = $res3->num_rows;
+                                    if($nmRws3 > 0){
+                                        while($row = $res3->fetch_assoc()){
+            
+                                            $userNameId = $row['id'];
+                                            $firstname = $row['firstname'];
+                                            $lastname = $row['lastname'];
+                                        echo    ' <ul class="users">
+                                                    <li><i><a href="singleFile.php?userId='.$row['id'].'" class="black-text">'.$firstname.' '.$lastname.'</a></i></li>
+                                                    <li class="divider"></li>
+                                                    
+                                                </ul>';
+                                        }
+                                    } 
+                                    // <a href="singleArticle.php?articleId='.$row['id'].'">Read More</a>
+                                ?>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="container grey">
+        <div class="row">
+    
+            <div class="col s12 m10 l10">
+    
+                <div id="test1" class="row">
+                    <h5 class="center"><i>Images</i></h5>
+    2106089424
+                    <?php
+                                    
+                                    $res =  $db->query('SELECT * FROM fileuploads WHERE  userId = '.$userId.' ORDER BY datePosted DESC');
+                                    $nmRws = $res->num_rows;
+        
+                                    if($nmRws > 0){
+                                            while($row = $res->fetch_assoc()){
+                                             $mediaType = $row['mediaType'];
+        
+                                                if( $mediaType == 'I'){
+                                                    array_push($imgArr, $row);
+                                                
+                                                 echo '<div>
+                                                        <div  class="col s10 m6 l3">              
+                                                            <div class="image-div" >
+                                                                <div class="zoom">
+                                                                <img class="responsive-img" src="../img/articleImages/'.$row['fileName'].'" alt="" width="100%"/>
+                                                                </div>
+                                                            </div>    
+                                                                <div class="desc">
+                                                                <b>'.substr($row['fileName'], 0, 20).'...</b> <br>
+                                                                <i><small>'.$row['datePosted'].'</small></i> 
+                                                                </div> 
+                                                                            
+                                                        </div>
+                                                    </div>';
+                                                } 
+        
+                                            }
+                                    } else {
+                                        echo '<div class="col l12 center-align"><i>No related post.</i></div>';
+                                    }
+                                    
+                                ?>
+    
+                </div>
+    
+                <div id="test2" class="row">
+                    <h5 class="center"><i>Audio</i></h5>
+                    <?php
+                            
+                                        $res1 =  $db->query('SELECT * FROM fileuploads WHERE userId = '.$userId.' ORDER BY datePosted DESC');
+                                        $nmRws1 = $res1->num_rows;
+                                                
+                                        if($nmRws1 > 0){    
+                                            while($row = $res1->fetch_assoc()){
+                                                $mediaType = $row['mediaType'];
+        
+                                                if( $mediaType == 'A'){
+                                                    array_push($audArr, $row);
+                                                 
+                                                echo  ' <div class="col s12 m12 l6" >
+                                                            <div> 
+                                                                <p style="margin-left:12px;"><b>'.substr($row['fileName'], 0, 20).'...</b></p> 
+                                                            
+                                                                <audio controls>
+                                                                    <source media="(min-width:200px)" src="../img/audio/'.$row['fileName'].'" srcset="" sizes="">
+                                                                </audio> <br>
+                                                            </div>
+                                                        </div>';
+                                                    }
+                                            }
+                                        } else {
+                                            echo '<div class="col l12 center-align"><i>No related post.</i></div>';
+                                        }
+                                        
+                                    ?>
+                    <?php
+                                        echo '<p><a href=""><i class="material-icons medium">account_circle</i></a></p>';
+                                        echo  "Hi $names welcome to our page";
+                                    ?>
+    
+                </div>
+    
+                <!-- <div id="test3" class="col s12">Test 3</div> -->
+    
+    
+    
+                <div id="test4" class="row">
+                    <h5 class="center"><i>Videos</i></h5>
+                    <?php
+                                    
+                                    $res2 =  $db->query('SELECT * FROM fileuploads WHERE  userId = '.$userId.' ORDER BY datePosted DESC');
+                                    $nmRws2 = $res2->num_rows;
+                
+                                    if($nmRws2 > 0){    
+                                        while($row = $res2->fetch_assoc()){ 
+                                            $mediaType = $row['mediaType'];
+        
+                                                if( $mediaType == 'V'){
+                                                    array_push($vidArr, $row);
+                                                
+                                            
+                                        echo    '<div class="col s12 m6 l4">
+                                                <p style="margin-left:12px;"><b>'.substr($row['fileName'], 0, 20).'...</b></p> 
+                                                    <video  controls poster="../img/bbb.jpg"  height="300px" width="80%">
+                                                        <source src="../img/video/'.$row['fileName'].'" >                            
+                                                    </video>
+                                                </div>'; 
+                                            }
+                                            }
+                                        } else {
+                                            echo '<div class="col l12 center-align"><i>No related post.</i></div>';
+                                        }
+                
+                                        
+                                    ?>
+                </div>
+            </div>
+    
+            <div class="col s12 m2 l2 light-green" style="margin-top:3.5rem;">
+                <section>
+                    <h6><b>USERS</b></h6>
+                    <hr>
+                    <?php
+                                    $res3 = $db->query('SELECT * FROM users');
+                                    $nmRws3 = $res3->num_rows;
+                                        if($nmRws3 > 0){
+                                            while($row = $res3->fetch_assoc()){
+                
+                                                $userNameId = $row['id'];
+                                                $firstname = $row['firstname'];
+                                                $lastname = $row['lastname'];
+                                            echo    ' <ul class="users">
+                                                        <li><i><a href="singleFile.php?userId='.$row['id'].'" class="black-text">'.$firstname.' '.$lastname.'</a></i></li>
+                                                        <li class="divider"></li>
+                                                        
+                                                    </ul>';
+                                            }
+                                        } 
+                                        // <a href="singleArticle.php?articleId='.$row['id'].'">Read More</a>
+                                    ?>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- UPDATE fileuploads SET access = "pub" WHERE access = 2 -->
+
+    <div class="row">
+        <div class="input-field col s12">
+            <input placeholder="Title" id="editArticleTitle" type="text" required class="validate" data-length="100">
+    
+        </div>
+        <div class="input-field col s12">
+            <select id="editArticleCat" required>
+                <option value="-">Choose Category</option>';
+                $res2 = $db->query('SELECT * FROM categories');
+                while($rw2 = $res2->fetch_assoc()){
+                echo '<option value="'.$rw2['id'].'">'.$rw2['category'].'</option>';
+                }
+    
+    
+                echo '
+            </select>
+            <label>Categories</label>
+        </div>
+        <div class="input-field col s12">
+            <textarea id="editArticle" class="materialize-textarea validate" required></textarea>
+        </div>
+        <input type="hidden" id="editArticleId" />
+        <div class="input-field col s12">
+            <button class="btn waves-effect waves-light col s12" type="submit">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+    </div>
+    <ul></ul>
+    ul*36
+    ul_36*
+
+        if(isset($_POST['makeArticleAction'])){//create article
+
+           $errMsg = "";
+
+
+            if(isset($_POST['title']) && $_POST['title'] != ""){
+                $title = $_POST['title'];
+            } else {
+                $errMsg .= '<li class="collection-item">Please Article Title shouldnt be empty.</li>';
+            }
+              
+           // Upload Image
+            // Validation
+            if(isset($_FILES['articleImg']['name'])){//file is uploaded
+                // Target Folder
+                $mediaType = '';
+                // $title = '';
+                $uploadOk = 0;   
+                $imageDir = "../img/articleImages/";
+                $audioDir = "../img/audio/";
+                $videoDir = "../img/video/";
+                 $targetDir = "";
+
+
+                $fileName = $_FILES['articleImg']['name'];
+                $fileExt = strrchr($fileName, ".");
+
+                if($fileExt == '.jpg' || $fileExt == '.png'){
+                    $mediaType = 'I';
+                    $targetDir = $imageDir;
+                }else if ($fileExt == '.mp3'){
+                    $mediaType = 'A';
+                    $targetDir = $audioDir;
+                }else if ($fileExt == '.mp4') {
+                    $mediaType = 'V';
+                    $targetDir = $videoDir;
+                } else {
+                    $uploadOk = 1;
+                    $errMsg .= '<li class="collection-item">Please ensure the file is one of the follwoing file types: [mp3, mp4, jpg, png].</li>';
+                }
+
+                // //check files dimension
+                // list($width, $height, $type, $attr) = getimagesize($_FILES["articleImg"]['tmp_name']);
+                // if($width > 1000 || $height > 500){
+                //     $errMsg .= '<li class="collection-item">Image should be of dimension 1000x500pixel max.</li>';
+                //     $uploadOk = 1;
+                // }
+                
+                // // Check file size
+                // if ($_FILES["articleImg"]["size"] > 500000) {
+                //     $errMsg .= '<li class="collection-item">Sorry, your file larger than 500kb.</li>';
+                //     $uploadOk = 1;
+                // }
+
+                //TODO: check if file exists in folder
+                  $filePath = $targetDir.'/'.basename($fileName);
+                if(file_exists($filePath)){
+                    $errMsg .= '<li class="collect-item">Sorry, file already exists.</li>';
+                    $uploadOk = 1;
+                }
+                   
+
+
+                if($uploadOk == 0){                   
+
+                    if (move_uploaded_file($_FILES["articleImg"]["tmp_name"], $filePath)) {
+                         $filePath = $targetDir.'/'.basename($fileName);
+                        //    echo "The file ". $fileName. " has been uploaded.";
+                        //    header('location: dash.php');
+
+                        if($errMsg == ""){
+                            require '../../uploadsDBconfig.php';
+
+                            $userId = $_SESSION['id'];
+                            $res = $db->query('INSERT INTO fileuploads(userId, mediaType, datePosted, fileName, title) VALUES ('.$userId.',"'.$mediaType.'", NOW(), "'.$fileName.'", "'.$title.'")');
+                            $inserted = $db->affected_rows;
+                         
+                            if($inserted){   
+                                echo 200;
+                            //   reload();
+                            } else {
+                                echo 501;
+                            }    
+                        } else {
+                            echo 501;
+                        }
+                    } else {
+                        echo "Sorry, there was an error uploading your file.";
+                    }
+                } else {
+                    echo '<ul>'.$errMsg.'</ul>';
+                }
+            }else{
+                echo 401;
+            }
+        }
+
+
+
+        <form action="controller.php" method="POST" id="editForm" id="makeArticle" enctype="multipart/form-data">
+        
+            <div class="input-field col s12 m8 l8">
+                <textarea id="title" placeholder="Say Something About Your Pics.." class="materialize-textarea" data-length="40"
+                    required></textarea>
+        
+            </div>
+            <div class="input-field col s12">
+                <select id="editArticleCat" required>
+                    <option value="-">Choose Category</option>';
+                    $res2 = $db->query('SELECT * FROM categories');
+                    while($rw2 = $res2->fetch_assoc()){
+                    echo '<option value="'.$rw2['id'].'">'.$rw2['mediaType'].'</option>';
+                    }
+        
+        
+                    echo '
+                </select>
+                <label>Categories</label>
+            </div>
+        
+            <div class="file-field input-field col s9 m6 l6">
+        
+                <div class="btn">
+                    <span>PICK FILE</span>
+                    <input type="file" id="editFile" name="articleImg">
+                </div>
+                <input type="hidden" id="editFileId" />
+                <div class="file-path-wrapper white-text">
+                    <input class="file-path  validate" type="text" required>
+                    <label class="red-text">Size:Less than 500kb, Dim:1000x500pixels</label>
+                </div>
+            </div>
+        
+            <div class="input-field col s3 m6 l6">
+                <button class="btn waves-effect waves-light" type="submit">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+
+
+        <p><a href="./singlePic.php?fileuploadsId='.$row['id'].'" style="height: 400px;">View</a></p>
