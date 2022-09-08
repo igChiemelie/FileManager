@@ -85,7 +85,7 @@
                                             <td>'.$imgArr[$b]['datePosted'].'</td>
                                             <td data-id="'.$imgArr[$b]['id'].'" data-categories="'.$imgArr[$b]['mediaType'].'">
                                                 <a href="#"><i class="material-icons">visibility</i></a>
-                                                <a href="#" class="showEditBlogModal" data-value="'.$imgArr[$b]['fileName'].'"  data-title="'.$imgArr[$b]['title'].'"><i class="material-icons">edit</i></a>
+                                                <a href="#" class="showEditImgModal" data-value="'.$imgArr[$b]['fileName'].'"  data-title="'.$imgArr[$b]['title'].'"><i class="material-icons">edit</i></a>
                                                 <a href="#" class="showDeleteBlogModal"><i class="material-icons">delete</i></a>
                                             </td>
                                         </tr>';
@@ -194,7 +194,7 @@
                                             <td>'.$audArr[$b]['datePosted'].'</td>
                                             <td data-id="'.$audArr[$b]['id'].'" data-title="'.$audArr[$b]['title'].'" data-article="'.$audArr[$b]['fileName'].'" data-catId="'.$audArr[$b]['mediaType'].'">
                                                 <a href="#"><i class="material-icons">visibility</i></a>
-                                                <a href="#" class="showEditBlogModal"><i class="material-icons">edit</i></a>
+                                                <a href="#" class="showEditAudioModal"><i class="material-icons">edit</i></a>
                                                 <a href="#" class="showDeleteBlogModal"><i class="material-icons">delete</i></a>
                                             </td>
                                         </tr>';
@@ -322,7 +322,7 @@
                                             <td>'.$vidArr[$b]['datePosted'].'</td>
                                             <td data-id="'.$vidArr[$b]['id'].'" data-title="'.$vidArr[$b]['title'].'" data-article="'.$vidArr[$b]['fileName'].'" data-catId="'.$vidArr[$b]['mediaType'].'">
                                                 <a href="#"><i class="material-icons">visibility</i></a>
-                                                <a href="#" class="showEditBlogModal"><i class="material-icons">edit</i></a>
+                                                <a href="#" class="showEditVideoModal"><i class="material-icons">edit</i></a>
                                                 <a href="#" class="showDeleteBlogModal"><i class="material-icons">delete</i></a>
                                             </td>
                                         </tr>';

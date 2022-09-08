@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <link rel="stylesheet" href="../fonts/material-icons.css">
     <link rel="stylesheet" href="../css/styles.css"> -->
 </head>
+
 <body>
 
- <?php
+    <?php
     session_start();//start seesion
     require '../../uploadsDBconfig.php';
 
@@ -60,12 +62,12 @@
             }
 
            
-?>  
-        <div class="container myCard1">  
-            <div class="row">
-                <div class="col s12 m10 l10">
-                    <div id="images" class="row">
-                        <?php
+?>
+    <div class="container myCard1">
+        <div class="row">
+            <div class="col s12 m10 l10">
+                <div id="images" class="row">
+                    <?php
                             $imgArrLen = count($imgArr);
                             if($imgArrLen > 0){
                                 // print_r($imgArr);
@@ -103,16 +105,16 @@
                             }
                         ?>
 
-                        <div class="row">
-                            <div class="col s12 center gutter">
-                                <a href="viewMore.php">View more..</a>
-                            </div>
-                        </div>                                              
-                            
+                    <div class="row">
+                        <div class="col s12 center gutter">
+                            <a href="viewMore.php">View more..</a>
+                        </div>
                     </div>
-            
-                    <div id="audios" class="row">
-                        <?php
+
+                </div>
+
+                <div id="audios" class="row">
+                    <?php
                             $audArrLen = count($audArr);
                             if($audArrLen > 0){
                                 
@@ -154,16 +156,16 @@
                             }
                         ?>
 
-                        <div class="row">
-                            <div class="col s12 center gutter">
-                                <a href="MoreAudios.php">View more..</a>
-                            </div>
-                        </div>  
-                            
+                    <div class="row">
+                        <div class="col s12 center gutter">
+                            <a href="MoreAudios.php">View more..</a>
+                        </div>
                     </div>
 
-                    <div id="videos" class="row">
-                        <?php
+                </div>
+
+                <div id="videos" class="row">
+                    <?php
                             $vidArrLen = count($vidArr);
                             if($vidArrLen > 0){
                                 
@@ -203,19 +205,19 @@
                             }
                         ?>
 
-                        <div class="row">
-                            <div class="col s12 center">
-                                <a href="MoreVIdeos.php">View more..</a>
-                            </div>
-                        </div> 
+                    <div class="row">
+                        <div class="col s12 center">
+                            <a href="MoreVIdeos.php">View more..</a>
+                        </div>
                     </div>
+                </div>
 
-                </div> 
-                    
-                <div class="col s12 m2 l2 light-green">
-                    <section>
-                        <h4>USERS</h4>
-                        <?php
+            </div>
+
+            <div class="col s12 m2 l2 light-green">
+                <section>
+                    <h4>USERS</h4>
+                    <?php
                             $res3 = $db->query('SELECT * FROM users');
                             $nmRws3 = $res3->num_rows; 
                             if($nmRws3 > 0){
@@ -230,10 +232,10 @@
                                 echo '</div>';
                             }                        
                         ?>
-                    </section>              
-                </div>
+                </section>
             </div>
         </div>
+    </div>
 
 
     <?php
@@ -246,11 +248,11 @@
     }
     ?>
 
-    <footer class="page-footer">  
+    <footer class="page-footer">
         <div class="footer-copyright">
-            <div  style="width: 90%; margin: 0 auto; max-width: 1280px;">
+            <div style="width: 90%; margin: 0 auto; max-width: 1280px;">
                 © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More  Links</a>
+                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
             </div>
         </div>
     </footer>
@@ -259,4 +261,5 @@
     <script src="../js/materialize.js"></script>
     <script src="../js/jbs.js"></script>
 </body>
+
 </html>

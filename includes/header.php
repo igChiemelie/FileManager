@@ -1,5 +1,5 @@
 <?php
-    session_start();//start seesion
+session_start(); //start seesion
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -57,16 +57,17 @@
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons right">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
                         <?php
-                            if(isset($_SESSION['loggedIn'])) {
-                                 $fName = $_SESSION['fName'];
-                                 $lName = $_SESSION['lName'];
-                                 $names = $fName.' '.$lName;
-                                echo '<li> <a href=""><i class="material-icons ">account_circle</i></a> </li>';
-                                echo '<li><a class="dropdown-trigger" href="#!" data-target="userProfile" >'.$names.'<i class="material-icons right">arrow_drop_down</i></a></li>';
-                            } else {
-                                echo '<li><a class="modal-trigger" href="#regModal">Login/Register</a></li> ';
-                            }
-                        ?>
+if (isset($_SESSION['loggedIn'])) {
+    $fName = $_SESSION['fName'];
+    $lName = $_SESSION['lName'];
+    $names = $fName . ' ' . $lName;
+    echo '<li> <a href=""><i class="material-icons ">account_circle</i></a> </li>';
+    echo '<li><a class="dropdown-trigger" href="#!" data-target="userProfile" >' . $names . '<i class="material-icons right">arrow_drop_down</i></a></li>';
+}
+else {
+    echo '<li><a class="modal-trigger" href="#regModal">Login/Register</a></li> ';
+}
+?>
                     </ul>
                 </div>
             </div>
@@ -86,12 +87,13 @@
 
   <ul class="sidenav" id="mobile-demo">
      <?php
-            if(isset($_SESSION['loggedIn'])) {
-                echo '<li><a class="dropdown-trigger" href="#!" data-target="userProfile1"><i class="material-icons ">account_circle </i>'.substr($names, 0, 15).'<i class="material-icons right">arrow_drop_down</i></a></li>';
-            } else {
-                echo '<li><a class="modal-trigger" href="#regModal">Login/Register</a></li>';
-            }
-        ?>
+if (isset($_SESSION['loggedIn'])) {
+    echo '<li><a class="dropdown-trigger" href="#!" data-target="userProfile1"><i class="material-icons ">account_circle </i>' . substr($names, 0, 15) . '<i class="material-icons right">arrow_drop_down</i></a></li>';
+}
+else {
+    echo '<li><a class="modal-trigger" href="#regModal">Login/Register</a></li>';
+}
+?>
         
   </ul>
 

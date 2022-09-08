@@ -176,7 +176,7 @@
 
                             
                             if(isset($_POST['fileName']) && $_POST['fileName'] != ""){
-                                $fileName = $fileName;
+                                $updatedfileName = $fileName;
                             } else {
                                 $errMsg .= '<li class="collection-item">Please type the article body.</li>';
                             }
@@ -184,7 +184,7 @@
                             $articleId = $_POST['id'];
                             
                             require '../../uploadsDBconfig.php';
-                            $res = $db->query('UPDATE fileuploads SET fileName = "'.$fileName.'", title="'.$title.'" WHERE id = '.$articleId);         
+                            $res = $db->query('UPDATE fileuploads SET fileName = "'.$updatedfileName.'", title="'.$title.'" WHERE id = '.$articleId);         
                             $updated = $db->affected_rows;
                             
 
@@ -258,7 +258,7 @@
                             }
 
                             if(isset($_POST['fileName']) && $_POST['fileName'] != ""){
-                                $fileName = $fileName;
+                                $updatedfileName = $fileName;
                             } else {
                                 $errMsg .= '<li class="collection-item">Please type the article body.</li>';
                             }
@@ -266,7 +266,7 @@
                             $articleId = $_POST['id'];
                             
                             require '../../uploadsDBconfig.php';
-                            $res = $db->query('UPDATE fileuploads SET fileName = "'.$fileName.'", title="'.$title.'" , mediaType = '.$mediaType.' WHERE id = '.$articleId);         
+                            $res = $db->query('UPDATE fileuploads SET fileName = "'.$updatedfileName.'", title="'.$title.'" , mediaType = '.$mediaType.' WHERE id = '.$articleId);         
                             $updated = $db->affected_rows;
                             
 
@@ -341,7 +341,7 @@
                             }
 
                             if(isset($_POST['fileName']) && $_POST['fileName'] != ""){
-                                $fileName = $fileName;
+                                $updatedfileName = $fileName;
                             } else {
                                 $errMsg .= '<li class="collection-item">Please type the article body.</li>';
                             }
@@ -349,7 +349,7 @@
                             $articleId = $_POST['id'];
                             
                             require '../../uploadsDBconfig.php';
-                            $res = $db->query('UPDATE fileuploads SET fileName = "'.$fileName.'", title="'.$title.'" , mediaType = '.$mediaType.' WHERE id = '.$articleId);         
+                            $res = $db->query('UPDATE fileuploads SET fileName = "'.$updatedfileName.'", title="'.$title.'" , mediaType = '.$mediaType.' WHERE id = '.$articleId);         
                             $updated = $db->affected_rows;
                             
 

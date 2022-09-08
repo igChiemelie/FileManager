@@ -57,7 +57,7 @@ $('#regForm').submit(function (e) {
     // let gender = $('input[name="gender"]').val();
     // let state = $('#state').val();
 
-    if (fName != " " && lName != " " && gender != " "  && pass != " " && pass == cPass) {
+    if (fName != " " && lName != " " && gender != " " && pass != " " && pass == cPass) {
         var formData = {
             firstName: fName,
             lastName: lName,
@@ -97,19 +97,19 @@ $('.dropdown-trigger').dropdown({
 $('#makeArticle').on('submit', function (e) {
     e.preventDefault();
 
-   
+
     let articleImg = $('input[name="articleImg"]')[0].files[0];
     let makeArticleAction = true;
     let titleEmelie = articleImg.name;
     let title = $('#title').val();
     let mediaType = $('#mediaType').val();
     // console.log(mediaType);
-    
-    
+
+
 
     let formData = new FormData();
 
-    
+
     formData.append('makeArticleAction', makeArticleAction);
     formData.append('title', title);
     formData.append('mediaType', mediaType);
@@ -125,8 +125,8 @@ $('#makeArticle').on('submit', function (e) {
         processData: false,
         contentType: false,
         success: (data) => {
-            if (data == 200) {  
-                M.toast({ html: 'The file ' + titleEmelie+' has been uploaded.'});
+            if (data == 200) {
+                M.toast({ html: 'The file ' + titleEmelie + ' has been uploaded.' });
                 location.reload();
             } else if (data == 501) {
                 M.toast({ html: 'Server Error! Please try again in 5 minutes.', displayLength: 6500, classes: 'error' });
@@ -165,8 +165,8 @@ $('.showDeleteBlogModal').on('click', function (e) {
     $('#delArtModal2').modal('open');//show modal
     $('#delArtModal3').modal('open');//show modal
 
-   
-    
+
+
 });
 
 
@@ -260,7 +260,7 @@ $('#deleteArticle3').on('click', function (e) {
 // $('#cancelDel').modal('close');//close modal
 $('#cancelDel').on('click', function (e) {
     $('.modal').modal('close');
-    
+
 });
 
 $('#cancelDel2').on('click', function (e) {
@@ -272,42 +272,24 @@ $('#cancelDel3').on('click', function (e) {
 });
 
 
-
-
-$('.showEditBlogModal').on('click', function (e) {
-    e.preventDefault();
-    // console.log('edit');
-    
+$('.showEditImgModal').on('click', function (e) {
+    console.log('hereNow');
     let editFileId = $(this).parents('td').attr('data-id');
     let Title = $(this).attr('data-title');
-    // let editFile = $(this).attr('data-value');
-    let articleCatId = $(this).parents('td').attr('data-categories');
 
-    
     $('#title').val(Title);
-    $('#title2').val(Title);
-    $('#title3').val(Title);
-
-    // $('#editArticleCat').val(articleCatId);
-    $('#editArticleCat2').val(articleCatId);
-    $('#editArticleCat3').val(articleCatId);
 
     $('#editFile').val();
-    $('#editFile2').val();
-    $('#editFile3').val();
-    // console.log(editFile);
+
     $('#editFileId').val(editFileId);
-    $('#editFileId2').val(editFileId);
-    $('#editFileId3').val(editFileId);
+
     // $('select').formSelect();//re-render select 
 
     $('#editModal1').modal('open');//show modal
-    $('#editModal2').modal('open');//show modal
-    $('#editModal3').modal('open');//show modal
+
 
     $('#editForm').on('submit', function (e) {
         e.preventDefault();
-
 
         let articleImgg = $('input[name="articleImgg"]')[0].files[0];
         console.log(articleImgg);
@@ -319,7 +301,7 @@ $('.showEditBlogModal').on('click', function (e) {
         let id = $('#editFileId').val();
         // let mediaType = $('#mediaType').val();
         // console.log(mediaType);
-        // console.log(id);
+        console.log(id);
 
 
 
@@ -358,9 +340,37 @@ $('.showEditBlogModal').on('click', function (e) {
         // console.log('hre3');
     });
 
+});
+
+$('.showEditAudioModal').on('click', function (e) {
+    e.preventDefault();
+    // console.log('edit');
+
+    let editFileId = $(this).parents('td').attr('data-id');
+    let Title = $(this).parents('td').attr('data-title');
+  
+
+    // let editFile = $(this).attr('data-value');
+    let articleCatId = $(this).parents('td').attr('data-categories');
+
+
+    $('#title2').val(Title);
+
+    // $('#editArticleCat').val(articleCatId);
+    $('#editArticleCat2').val(articleCatId);
+
+    $('#editFile2').val();
+    // console.log(editFile);
+    $('#editFileId2').val(editFileId);
+    // $('select').formSelect();//re-render select 
+
+    $('#editModal2').modal('open');//show modal
+
+
+
     $('#editForm2').on('submit', function (e) {
         e.preventDefault();
-        
+
 
         let articleImggg = $('input[name="articleImggg"]')[0].files[0];
         console.log(articleImggg);
@@ -388,7 +398,7 @@ $('.showEditBlogModal').on('click', function (e) {
         formData.append('id', id);
 
 
-        
+
 
         let url = $(this).attr('action');
         let mtd = $(this).attr('method');
@@ -414,6 +424,34 @@ $('.showEditBlogModal').on('click', function (e) {
         });
         // console.log('hre3');
     });
+
+});
+
+$('.showEditVideoModal').on('click', function (e) {
+    e.preventDefault();
+    // console.log('edit');
+
+    let editFileId = $(this).parents('td').attr('data-id');
+    let Title = $(this).parents('td').attr('data-title');
+    // let editFile = $(this).attr('data-value');
+    let articleCatId = $(this).parents('td').attr('data-categories');
+
+
+
+    $('#title3').val(Title);
+
+
+    $('#editArticleCat3').val(articleCatId);
+
+
+    $('#editFile3').val();
+    // console.log(editFile);
+
+    $('#editFileId3').val(editFileId);
+    // $('select').formSelect();//re-render select 
+
+
+    $('#editModal3').modal('open');//show modal
 
     $('#editForm3').on('submit', function (e) {
         e.preventDefault();
