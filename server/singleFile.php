@@ -26,6 +26,7 @@
 
         if(isset($_GET['userId'])){    
           $userId = $_GET['userId'];
+          print_r($userId);
     
         
             $imgArr = [];
